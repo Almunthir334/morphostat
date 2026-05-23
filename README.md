@@ -31,7 +31,7 @@ endpoint.
 ## Install
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/Almunthir334/morphostat.git
 cd MorphoStat
 pip install -e .
 ```
