@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morphostat"
+version = "0.1.0"
+description = "End-to-end morphological post-processing for FilamentSensor / ImageJ / CellProfiler outputs"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Almunthir" }]
+keywords = ["cytoskeleton", "morphology", "FilamentSensor", "CellProfiler", "image analysis", "oncology"]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scipy>=1.9",
+    "scikit-learn>=1.1",
+    "statsmodels>=0.13",
+    "matplotlib>=3.6",
+    "seaborn>=0.12",
+]
+
+[project.scripts]
+morphostat = "morphostat.cli:main"
+
+[tool.setuptools]
+packages = ["morphostat"]
